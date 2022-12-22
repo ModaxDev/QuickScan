@@ -1,0 +1,34 @@
+{
+  "strict": {
+    "text-font-family": "Outfit-Regular",
+
+    "text-heading-1-font-weight": "600",
+    "text-heading-1-font-family": "Outfit-Bold",
+
+    "text-heading-2-font-weight": "600",
+    "text-heading-2-font-family": "Outfit-Bold",
+
+    "text-heading-3-font-weight": "600",
+    "text-heading-3-font-family": "Outfit-Bold",
+
+    "text-heading-4-font-weight": "600",
+    "text-heading-4-font-family": "Outfit-Bold",
+
+    "text-heading-5-font-weight": "600",
+    "text-heading-5-font-family": "Outfit-Bold",
+
+    "text-heading-6-font-weight": "600",
+    "text-heading-6-font-family": "Outfit-Bold",
+
+    "text-subtitle-1-font-family": "Outfit-SemiBold",
+    "text-subtitle-2-font-family": "Outfit-SemiBold",
+
+    "text-paragraph-1-font-family": "Outfit-Regular",
+    "text-paragraph-2-font-family": "Outfit-Regular",
+
+    "text-caption-1-font-family": "Outfit-Regular",
+    "text-caption-2-font-family": "Outfit-Regular",
+
+    "text-label-font-family": "Outfit-Bold"
+  }
+}

@@ -30,22 +30,7 @@ interface Props {
 
 const BottomTabBar = ({ navigation, state }: any) => (
     <BottomNavigation
-        appearance="noIndicator"
         style={{
-            backgroundColor: "#333",
-            borderTopWidth: 0,
-
-            width: "100%",
-            borderBottomEndRadius: 20,
-            borderBottomStartRadius: 20,
-            borderTopLeftRadius: 20,
-            borderTopRightRadius: 20,
-            elevation: 0,
-
-            position: "absolute",
-            left: 0,
-            right: 50,
-            bottom: 0,
             height: 70,
         }}
         selectedIndex={state.index}
