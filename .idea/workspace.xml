@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add bar code scanner to test">
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add square on the view bar code">
+      <change afterPath="$PROJECT_DIR$/src/navigation/AppNavigator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/template/AccountScreen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/template/ProductScreen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JBZXwqNGbKWEFkUC3Qkw4mqMTL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,7 +66,9 @@
       <workItem from="1671554373929" duration="182000" />
       <workItem from="1671668257248" duration="1532000" />
       <workItem from="1671722776297" duration="1042000" />
-      <workItem from="1671743717795" duration="649000" />
+      <workItem from="1671743717795" duration="1804000" />
+      <workItem from="1671745915278" duration="37000" />
+      <workItem from="1671745974310" duration="548000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -71,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671669642017</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add square on the view bar code">
+      <created>1671744606819</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671744606819</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add ui kitten, axios, and react query" />
     <MESSAGE value="feat: add bar code scanner to test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add bar code scanner to test" />
+    <MESSAGE value="feat: add square on the view bar code" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add square on the view bar code" />
   </component>
 </project>
