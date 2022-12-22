@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add ui kitten, axios, and react query">
-      <change afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add bar code scanner to test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,9 @@
       <updated>1671553482475</updated>
       <workItem from="1671553483501" duration="791000" />
       <workItem from="1671554373929" duration="182000" />
-      <workItem from="1671668257248" duration="1224000" />
+      <workItem from="1671668257248" duration="1532000" />
+      <workItem from="1671722776297" duration="1042000" />
+      <workItem from="1671743717795" duration="649000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -65,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671554551637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add bar code scanner to test">
+      <created>1671669642017</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671669642017</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +79,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add ui kitten, axios, and react query" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add ui kitten, axios, and react query" />
+    <MESSAGE value="feat: add bar code scanner to test" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add bar code scanner to test" />
   </component>
 </project>

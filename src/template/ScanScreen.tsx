@@ -35,6 +35,8 @@ const ScanScreen = () => {
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
                 style={StyleSheet.absoluteFillObject}
             />
+            <View style={styles.scannerContainer}>
+            </View>
             {scanned && (
                 <View style={styles.margin}><Button onPress={() => setScanned(false)}>Tap to Scan Again</Button></View>
 
@@ -50,7 +52,19 @@ const styles = StyleSheet.create({
     },
     margin: {
         marginTop: 140
-    }
+    },
+    scannerContainer: {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: [{ translateX: -150 }, { translateY: -150 }],
+        width: 300,
+        height: 300,
+        borderColor: '#FFFFFF',
+        borderWidth: 2,
+        borderRadius: 10,
+        backgroundColor: 'rgba(0,0,0,0)',
+    },
 });
 
 
