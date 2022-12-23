@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { Camera, FlashMode } from 'expo-camera';
+import {useEffect, useState} from 'react';
+import {Camera, FlashMode} from 'expo-camera';
 import * as Haptics from 'expo-haptics';
 
-import { View, StyleSheet, TouchableOpacity,Text } from 'react-native';
-import {Button,Icon} from "@ui-kitten/components"
+import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
+import {Button, Icon} from "@ui-kitten/components"
 
 
 const ScanScreen = () => {
@@ -11,17 +11,16 @@ const ScanScreen = () => {
     const [scanned, setScanned] = useState(false);
     const [flashOn, setFlashOn] = useState(false);
 
-
     useEffect(() => {
         const getCameraPermission = async () => {
-            const { status } = await Camera.requestCameraPermissionsAsync();
+            const {status} = await Camera.requestCameraPermissionsAsync();
             // @ts-ignore
             setHasPermission(status === 'granted');
         };
         getCameraPermission();
     }, []);
 
-    const handleBarCodeScanned = ({ type, data }: any) => {
+    const handleBarCodeScanned = ({type, data}: any) => {
         setScanned(true);
         alert(`Bar code with type ${type} and data ${data} has been scanned!`);
 
@@ -54,7 +53,7 @@ const ScanScreen = () => {
                     Haptics.notificationAsync(
                         Haptics.NotificationFeedbackType.Success
                     )
-                }} style={[styles.button,{backgroundColor: flashOn ? 'rgb(255,255,255)' :'rgba(255,255,255,0.41)',}]}>
+                }} style={[styles.button, {backgroundColor: flashOn ? 'rgb(255,255,255)' : 'rgba(255,255,255,0.41)',}]}>
                     <Icon
                         style={{
                             width: 35,
