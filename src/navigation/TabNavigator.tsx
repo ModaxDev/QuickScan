@@ -5,6 +5,7 @@ import ScanScreen from "../template/ScanScreen";
 import BottomTabBar from "./BottomTabBar";
 import AccountScreen from "../template/AccountScreen";
 import ProductScreen from "../template/ProductScreen";
+import ScanNavigator from "./ScanNavigator";
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -14,11 +15,9 @@ const TabNavigator = () => (
             options={{
                 headerShown: false,
             }}
-            name="SCAN"
-            component={ScanScreen}
+            name="ScanTab"
+            component={ScanNavigator}
         />
-
-        <Screen name="PRODUCT" component={ProductScreen} />
         <Screen name="ACCOUNT" component={AccountScreen} />
     </Navigator>
 );

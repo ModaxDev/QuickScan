@@ -42,8 +42,6 @@ const BottomTabBar = ({ navigation, state }: any) => (
             icon={HomeIcon}
             title={(evaProps) => <Text {...evaProps}>SCAN</Text>}
         />
-
-        <BottomNavigationTab icon={LikedIcon} title="PRODUCT" />
         <BottomNavigationTab icon={AccountIcon} title="ACCOUNT" />
     </BottomNavigation>
 );

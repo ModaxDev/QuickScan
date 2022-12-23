@@ -6,7 +6,7 @@ import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
 import {Button, Icon} from "@ui-kitten/components"
 
 
-const ScanScreen = () => {
+const ScanScreen = ({navigation} :any) => {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
     const [flashOn, setFlashOn] = useState(false);
@@ -22,8 +22,8 @@ const ScanScreen = () => {
 
     const handleBarCodeScanned = ({type, data}: any) => {
         setScanned(true);
-        alert(`Bar code with type ${type} and data ${data} has been scanned!`);
-
+        //alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+        navigation.navigate('Product', {id: data});
     };
 
     if (hasPermission === null) {
