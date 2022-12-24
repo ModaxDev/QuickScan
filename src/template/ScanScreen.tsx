@@ -1,9 +1,9 @@
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Camera, FlashMode} from 'expo-camera';
 import * as Haptics from 'expo-haptics';
 
-import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
-import {Button, Icon} from "@ui-kitten/components"
+import {View, StyleSheet, TouchableOpacity, Text, Alert} from 'react-native';
+import {Button, Icon, Spinner} from "@ui-kitten/components"
 import useApi from "../hooks/useApi";
 import ProductRepository from "../repository/ProductRepository";
 
@@ -24,17 +24,15 @@ const ScanScreen = ({navigation}: any) => {
     }, []);
 
     const handleBarCodeScanned = async ({type, data}: any) => {
-        setScanned(true);
         setIsLoading(true);
+        setScanned(true);
         try {
             const response = await ProductRepository.findOneByCode(data);
             // Now you can use the response to navigate to the product page
             setFlashOn(false);
             navigation.navigate('Product', {product: response.data});
         } catch (error) {
-            // An error occurred while trying to retrieve the product
-            console.error(error);
-            // You can show an error message to the user or try again
+            Alert.alert('Error', 'Une erreur est survenue lors de la récupération du produit ou celui-ci n\'existe pas');
         } finally {
             setIsLoading(false);
         }
@@ -54,6 +52,9 @@ const ScanScreen = ({navigation}: any) => {
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
                 style={StyleSheet.absoluteFillObject}
             />
+            <View style={styles.spinnerContainer}>
+                {isLoading && <Spinner size='giant' status='primary'/>}
+            </View>
             <View style={styles.scannerContainer}>
             </View>
             {scanned && (
@@ -88,6 +89,17 @@ const styles = StyleSheet.create({
     },
     margin: {
         marginTop: 140
+    },
+    spinnerContainer: {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: [{translateX: -150}, {translateY: -150}],
+        width: 300,
+        height: 300,
+        justifyContent: 'center',
+        alignItems: 'center',
+
     },
     scannerContainer: {
         position: 'absolute',
