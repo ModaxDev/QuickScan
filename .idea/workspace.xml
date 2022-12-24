@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add torch on/off + haptics return on click on button">
-      <change afterPath="$PROJECT_DIR$/src/navigation/ScanNavigator.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add a link to product page when scan, and navigator to scan">
+      <change afterPath="$PROJECT_DIR$/src/api/Request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repository/ProductRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/env.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/BottomTabBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/BottomTabBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/ProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ProductScreen.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -24,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -67,7 +70,9 @@
       <workItem from="1671722776297" duration="1042000" />
       <workItem from="1671743717795" duration="1804000" />
       <workItem from="1671745915278" duration="37000" />
-      <workItem from="1671745974310" duration="6601000" />
+      <workItem from="1671745974310" duration="6678000" />
+      <workItem from="1671830871200" duration="6273000" />
+      <workItem from="1671842336598" duration="717000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -118,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671756795993</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add a link to product page when scan, and navigator to scan">
+      <created>1671758317276</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671758317276</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +143,7 @@
     <MESSAGE value="feat: add bottom and tab to project" />
     <MESSAGE value="feat: custom theme" />
     <MESSAGE value="feat: add torch on/off + haptics return on click on button" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add torch on/off + haptics return on click on button" />
+    <MESSAGE value="feat: add a link to product page when scan, and navigator to scan" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add a link to product page when scan, and navigator to scan" />
   </component>
 </project>

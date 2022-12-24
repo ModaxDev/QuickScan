@@ -4,12 +4,15 @@ import * as Haptics from 'expo-haptics';
 
 import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
 import {Button, Icon} from "@ui-kitten/components"
+import useApi from "../hooks/useApi";
+import ProductRepository from "../repository/ProductRepository";
 
 
-const ScanScreen = ({navigation} :any) => {
+const ScanScreen = ({navigation}: any) => {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
     const [flashOn, setFlashOn] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const getCameraPermission = async () => {
@@ -20,10 +23,21 @@ const ScanScreen = ({navigation} :any) => {
         getCameraPermission();
     }, []);
 
-    const handleBarCodeScanned = ({type, data}: any) => {
+    const handleBarCodeScanned = async ({type, data}: any) => {
         setScanned(true);
-        //alert(`Bar code with type ${type} and data ${data} has been scanned!`);
-        navigation.navigate('Product', {id: data});
+        setIsLoading(true);
+        try {
+            const response = await ProductRepository.findOneByCode(data);
+            // Now you can use the response to navigate to the product page
+            setFlashOn(false);
+            navigation.navigate('Product', {product: response.data});
+        } catch (error) {
+            // An error occurred while trying to retrieve the product
+            console.error(error);
+            // You can show an error message to the user or try again
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     if (hasPermission === null) {
