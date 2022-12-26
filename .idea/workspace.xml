@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: connect app to api and after scan sucessfull, go to the product page">
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add error message if no product found">
+      <change afterPath="$PROJECT_DIR$/src/component/Icons/FontAwesome.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/BottomTabBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/BottomTabBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/AccountScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/SearchScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -63,7 +70,9 @@
       <workItem from="1671745915278" duration="37000" />
       <workItem from="1671745974310" duration="6678000" />
       <workItem from="1671830871200" duration="6273000" />
-      <workItem from="1671842336598" duration="1457000" />
+      <workItem from="1671842336598" duration="1596000" />
+      <workItem from="1672008244610" duration="379000" />
+      <workItem from="1672059978330" duration="2364000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -128,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671843139699</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: add error message if no product found">
+      <created>1671844029071</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671844029071</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +159,7 @@
     <MESSAGE value="feat: add torch on/off + haptics return on click on button" />
     <MESSAGE value="feat: add a link to product page when scan, and navigator to scan" />
     <MESSAGE value="feat: connect app to api and after scan sucessfull, go to the product page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: connect app to api and after scan sucessfull, go to the product page" />
+    <MESSAGE value="feat: add error message if no product found" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add error message if no product found" />
   </component>
 </project>

@@ -7,11 +7,12 @@ import {EvaIconsPack} from "@ui-kitten/eva-icons";
 import {default as theme} from "./theme.json";
 import {default as mapping} from './mapping.json';
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
+import {FontAwesomeIconsPack} from "./src/component/Icons/FontAwesome";
 
 
 export default () => (
     <>
-            <IconRegistry icons={[EvaIconsPack]}/>
+            <IconRegistry icons={EvaIconsPack}/>
             <ApplicationProvider {...eva} theme={{...eva.light, ...theme}}>
                 <AppNavigator/>
             </ApplicationProvider>
