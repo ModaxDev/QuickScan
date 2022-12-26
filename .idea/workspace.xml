@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: header">
-      <change afterPath="$PROJECT_DIR$/src/component/Display/SafeScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailHeader.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add product detail header">
+      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailHeaderInformation.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/ProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ProductScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/env.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/env.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +68,7 @@
       <workItem from="1671830871200" duration="6273000" />
       <workItem from="1671842336598" duration="1596000" />
       <workItem from="1672008244610" duration="379000" />
-      <workItem from="1672059978330" duration="5695000" />
+      <workItem from="1672059978330" duration="10823000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -156,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672063991749</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: add product detail header">
+      <created>1672067029683</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672067029683</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +179,7 @@
     <MESSAGE value="feat: add error message if no product found" />
     <MESSAGE value="feat: add icons" />
     <MESSAGE value="feat: header" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: header" />
+    <MESSAGE value="feat: add product detail header" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add product detail header" />
   </component>
 </project>
