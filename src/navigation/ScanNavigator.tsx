@@ -16,6 +16,7 @@ const ScanNavigator = () => {
             }} name="Scan" component={ScanScreen}/>
             <Stack.Screen options={{
                 animationEnabled: true,
+                headerShown: false,
             }} name="Product" component={ProductScreen}/>
         </Stack.Navigator>
     )

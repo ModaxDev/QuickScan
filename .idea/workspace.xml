@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add error message if no product found">
-      <change afterPath="$PROJECT_DIR$/src/component/Icons/FontAwesome.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add icons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/BottomTabBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/BottomTabBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/ScanNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/ScanNavigator.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/AccountScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/SearchScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +66,7 @@
       <workItem from="1671830871200" duration="6273000" />
       <workItem from="1671842336598" duration="1596000" />
       <workItem from="1672008244610" duration="379000" />
-      <workItem from="1672059978330" duration="2364000" />
+      <workItem from="1672059978330" duration="3087000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -144,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671844029071</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: add icons">
+      <created>1672063172561</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672063172561</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +161,7 @@
     <MESSAGE value="feat: add a link to product page when scan, and navigator to scan" />
     <MESSAGE value="feat: connect app to api and after scan sucessfull, go to the product page" />
     <MESSAGE value="feat: add error message if no product found" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add error message if no product found" />
+    <MESSAGE value="feat: add icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add icons" />
   </component>
 </project>
