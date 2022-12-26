@@ -7,7 +7,6 @@ import ProductDetailHeaderInformation from "../component/Product/ProductDetailHe
 import ProductDetailDescription from "../component/Product/ProductDetailDescription";
 
 const ProductScreen = ({route, navigation}: any) => {
-    const [selectedIndex, setSelectedIndex] = React.useState(null);
     const {product} = route.params;
     return (
         <SafeScreen>

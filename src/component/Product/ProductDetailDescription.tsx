@@ -1,17 +1,20 @@
 import RenderHTML from "react-native-render-html";
-import {Layout} from "@ui-kitten/components";
+import {Layout, Text} from "@ui-kitten/components";
 import React from "react";
 import {Dimensions, StyleSheet} from "react-native";
 
-const ProductDetailDescription = ({product} : any) => {
+const ProductDetailDescription = ({product}: any) => {
 
     const source = {
         html: product.description,
     };
-    return(
+    return (
         <Layout style={styles.container}>
-            <RenderHTML contentWidth={100}
-                        source={source}/>
+            <Text category={"h6"}>Description</Text>
+            <Layout style={styles.description}>
+                <RenderHTML contentWidth={100}
+                            source={source}/>
+            </Layout>
         </Layout>
     )
 }
@@ -22,5 +25,8 @@ const styles = StyleSheet.create({
         container: {
             margin: 20,
         },
+        description: {
+            paddingTop: 6,
+        }
     })
 ;
