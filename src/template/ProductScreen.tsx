@@ -36,7 +36,7 @@ const ProductScreen = ({route, navigation}: any) => {
                 <ProductDetailDescription product={product}/>
                 <ProductDetailAccessory product={product}/>
                 {categories.map((category : any, index : any) => (
-                    <ProductDetailVideo categoryName={category} product={videosByCategoryState ? videosByCategoryState[category] : []}/>
+                    <ProductDetailVideo key={index} keyProp={index} categoryName={category} product={videosByCategoryState ? videosByCategoryState[category] : []}/>
                 ))}
             </View>
         </SafeScreen>

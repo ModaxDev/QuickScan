@@ -7,7 +7,7 @@ import playing = Simulate.playing;
 import YoutubePlayer from "react-native-youtube-iframe";
 
 
-const ProductDetailVideo = ({product, categoryName}:any) => {
+const ProductDetailVideo = ({product, categoryName, keyProp}:any) => {
     const [playing, setPlaying] = useState(false);
 
     const onStateChange = useCallback((state: any) => {
@@ -17,7 +17,7 @@ const ProductDetailVideo = ({product, categoryName}:any) => {
     }, []);
 
     return (
-        <ScrollView style={styles.container}>
+        <ScrollView key={keyProp} style={styles.container}>
             <Layout style={styles.text}><Text category={"h6"}>Vidéos - {categoryName}</Text></Layout>
             <FlatList
                 horizontal
