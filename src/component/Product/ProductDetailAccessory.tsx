@@ -8,7 +8,7 @@ const ProductDetailAccessory = ({product} : any) => {
     return (
         <ScrollView>
             <Layout style={styles.text}><Text category={"h6"}>Accéssoires / Gadgets</Text></Layout>
-            <FlatList horizontal data={product.productAccessories} renderItem={({item}: any) => {
+            <FlatList showsHorizontalScrollIndicator={false} horizontal data={product.productAccessories} renderItem={({item}: any) => {
                 return (
                     <TouchableOpacity
                         style={styles.container}

@@ -9,6 +9,7 @@ import {IMAGE_URL} from "../utils/env";
 import ProductDetailAccessory from "../component/Product/ProductDetailAccessory";
 import ProductDetailVideo from "../component/Product/ProductDetailVideo";
 import YoutubePlayer from "react-native-youtube-iframe";
+import ProductDetailTag from "../component/Product/ProductDetailTag";
 
 const ProductScreen = ({route, navigation}: any) => {
     const {product} = route.params;
@@ -33,6 +34,7 @@ const ProductScreen = ({route, navigation}: any) => {
         <SafeScreen product={product}>
             <View style={styles.globalContainer}>
                 <ProductDetailHeaderInformation product={product}/>
+                <ProductDetailTag product={product}/>
                 <ProductDetailDescription product={product}/>
                 <ProductDetailAccessory product={product}/>
                 {categories.map((category : any, index : any) => (

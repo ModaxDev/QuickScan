@@ -20,6 +20,7 @@ const ProductDetailVideo = ({product, categoryName, keyProp}:any) => {
         <ScrollView key={keyProp} style={styles.container}>
             <Layout style={styles.text}><Text category={"h6"}>Vidéos - {categoryName}</Text></Layout>
             <FlatList
+                showsHorizontalScrollIndicator={false}
                 horizontal
                 data={product}
                 renderItem={({item,index}: any) => (
