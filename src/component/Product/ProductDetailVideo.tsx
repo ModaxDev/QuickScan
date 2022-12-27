@@ -7,36 +7,31 @@ import playing = Simulate.playing;
 import YoutubePlayer from "react-native-youtube-iframe";
 
 
-const ProductDetailVideo = ({product}: any) => {
+const ProductDetailVideo = ({product, categoryName}:any) => {
     const [playing, setPlaying] = useState(false);
 
     const onStateChange = useCallback((state: any) => {
-        console.log(state)
         if (state === "ended") {
             setPlaying(false);
-            Alert.alert("video has finished playing!");
         }
-    }, []);
-
-    const togglePlaying = useCallback(() => {
-        setPlaying((prev) => !prev);
     }, []);
 
     return (
         <ScrollView style={styles.container}>
-            <Layout style={styles.text}><Text category={"h6"}>Vidéos</Text></Layout>
+            <Layout style={styles.text}><Text category={"h6"}>Vidéos - {categoryName}</Text></Layout>
             <FlatList
                 horizontal
-                data={product.productVideos}
-                renderItem={({item}: any) => (
+                data={product}
+                renderItem={({item,index}: any) => (
                     <TouchableOpacity
+                        key={index}
                         style={styles.video}
                     >
                         <View>
                             <YoutubePlayer
                                 height={180}
-                                width={300}
-                                play={false}
+                                width={250}
+                                play={playing}
                                 videoId={"QBO0mrfbigE"}
                                 onChangeState={onStateChange}
                             />
