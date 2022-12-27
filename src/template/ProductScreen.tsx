@@ -7,6 +7,8 @@ import ProductDetailHeaderInformation from "../component/Product/ProductDetailHe
 import ProductDetailDescription from "../component/Product/ProductDetailDescription";
 import {IMAGE_URL} from "../utils/env";
 import ProductDetailAccessory from "../component/Product/ProductDetailAccessory";
+import ProductDetailVideo from "../component/Product/ProductDetailVideo";
+import YoutubePlayer from "react-native-youtube-iframe";
 
 const ProductScreen = ({route, navigation}: any) => {
     const {product} = route.params;
@@ -17,6 +19,7 @@ const ProductScreen = ({route, navigation}: any) => {
                 <ProductDetailHeaderInformation product={product}/>
                 <ProductDetailDescription product={product}/>
                 <ProductDetailAccessory product={product}/>
+                <ProductDetailVideo product={product}/>
             </View>
         </SafeScreen>
     )
@@ -29,9 +32,9 @@ const styles = StyleSheet.create({
         globalContainer: {
             flex: 1,
         },
-    container: {
-        marginLeft: 20,
-        textAlign: "center",
-    },
+        container: {
+            marginLeft: 20,
+            textAlign: "center",
+        },
     })
 ;
