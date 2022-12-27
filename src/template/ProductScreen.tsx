@@ -13,8 +13,7 @@ import YoutubePlayer from "react-native-youtube-iframe";
 const ProductScreen = ({route, navigation}: any) => {
     const {product} = route.params;
     return (
-        <SafeScreen>
-            <ProductDetailHeader product={product}/>
+        <SafeScreen product={product}>
             <View style={styles.globalContainer}>
                 <ProductDetailHeaderInformation product={product}/>
                 <ProductDetailDescription product={product}/>

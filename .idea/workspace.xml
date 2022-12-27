@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add product detail accessory">
-      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailVideo.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add product detail video and add video player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Display/SafeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Display/SafeScreen.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/ProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ProductScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <workItem from="1671830871200" duration="6273000" />
       <workItem from="1671842336598" duration="1596000" />
       <workItem from="1672008244610" duration="379000" />
-      <workItem from="1672059978330" duration="17691000" />
+      <workItem from="1672059978330" duration="18077000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -189,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672096173082</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: add product detail video and add video player">
+      <created>1672102729726</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1672102729726</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +217,7 @@
     <MESSAGE value="feat: add product detail description component" />
     <MESSAGE value="feat: updates components" />
     <MESSAGE value="feat: add product detail accessory" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add product detail accessory" />
+    <MESSAGE value="feat: add product detail video and add video player" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add product detail video and add video player" />
   </component>
 </project>
