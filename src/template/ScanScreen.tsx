@@ -6,6 +6,7 @@ import {View, StyleSheet, TouchableOpacity, Text, Alert} from 'react-native';
 import {Button, Icon, Spinner} from "@ui-kitten/components"
 import useApi from "../hooks/useApi";
 import ProductRepository from "../repository/ProductRepository";
+import ProductStorage from "../utils/Storage/ProductStorage";
 
 
 const ScanScreen = ({navigation}: any) => {
@@ -29,6 +30,18 @@ const ScanScreen = ({navigation}: any) => {
         try {
             const response = await ProductRepository.findOneByCode(data);
             // Now you can use the response to navigate to the product page
+            try {
+                const ProductStorageItem: ProductStorageType = {
+                    name: response.data.name,
+                    createdAt: new Date(),
+                    company: response.data.company,
+                    barCodeNumber: response.data.barCodeNumber,
+                    fileUrl: response.data.fileUrl,
+                }
+                await ProductStorage.storeProduct(ProductStorageItem);
+            } catch (e) {
+                console.log(e);
+            }
             setFlashOn(false);
             navigation.navigate('Product', {product: response.data});
         } catch (error) {

@@ -33,12 +33,12 @@ const BottomTabBar = ({ navigation, state }: any) => (
             navigation.navigate(state.routeNames[index]);
         }}
     >
-        <BottomNavigationTab icon={HistoryIcon} title="History" />
+        <BottomNavigationTab icon={HistoryIcon} title="Historique" />
         <BottomNavigationTab
             icon={HomeIcon}
-            title={(evaProps) => <Text {...evaProps}>Scan</Text>}
+            title={(evaProps) => <Text {...evaProps}>Scanner</Text>}
         />
-        <BottomNavigationTab icon={SearchIcon} title="Search" />
+        <BottomNavigationTab icon={SearchIcon} title="Rechercher" />
     </BottomNavigation>
 );
 

@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: fix the key from the product detail video">
-      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailTag.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add product detail tags">
+      <change afterPath="$PROJECT_DIR$/src/component/List/ListItemDeleteAction.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/List/ListItemSeparator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductHistoryItemList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/ProductStorageType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductDetailAccessory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailAccessory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductDetailVideo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailVideo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/ProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ProductScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/BottomTabBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/BottomTabBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +78,7 @@
       <workItem from="1672008244610" duration="379000" />
       <workItem from="1672059978330" duration="20303000" />
       <workItem from="1672175353291" duration="1041000" />
-      <workItem from="1672177953280" duration="1579000" />
+      <workItem from="1672177953280" duration="10977000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -219,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672176390282</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: add product detail tags">
+      <created>1672179631891</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672179631891</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +261,7 @@
     <MESSAGE value="feat: customize Safe screen to get product header detail" />
     <MESSAGE value="feat: add multiples product detail video depand of the category of the video" />
     <MESSAGE value="fix: fix the key from the product detail video" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fix the key from the product detail video" />
+    <MESSAGE value="feat: add product detail tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add product detail tags" />
   </component>
 </project>

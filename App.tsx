@@ -5,16 +5,20 @@ import ScanScreen from "./src/template/ScanScreen";
 import AppNavigator from "./src/navigation/AppNavigator";
 import {EvaIconsPack} from "@ui-kitten/eva-icons";
 import {default as theme} from "./theme.json";
-import {default as mapping} from './mapping.json';
-import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
-import {FontAwesomeIconsPack} from "./src/component/Icons/FontAwesome";
+import moment from 'moment';
+// @ts-ignore
+import localization from 'moment/locale/fr'
 
 
-export default () => (
+
+export default () => {
+    // @ts-ignore
+    moment().locale('fr',localization);
+    return (
     <>
             <IconRegistry icons={EvaIconsPack}/>
             <ApplicationProvider {...eva} theme={{...eva.light, ...theme}}>
                 <AppNavigator/>
             </ApplicationProvider>
     </>
-);
+)};
