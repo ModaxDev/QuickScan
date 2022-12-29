@@ -12,6 +12,8 @@ type Props = {
     product: ProductStorageType;
     index: number;
     onDeleted: () => Promise<void>;
+
+    navigation: any;
 }
 
 const ProductHistoryItemList = (props : Props) => {
@@ -30,7 +32,7 @@ const ProductHistoryItemList = (props : Props) => {
         <Swipeable renderRightActions={() => <ListItemDeleteAction onPress={() => handleDelete(props.index)}/>}>
             <TouchableHighlight
                 underlayColor={'#f1f1f1'}
-                onPress={() => console.log("Pressed")}
+                onPress={() => props.navigation.navigate('Product', {product: props.product,history: true})}
             >
                 <View style={styles.container}>
                     <Layout style={styles.itemContainer}>
@@ -75,6 +77,9 @@ const styles = StyleSheet.create({
     container: {
         paddingVertical: 10,
         backgroundColor: '#fff',
+        borderBottomWidth: 1,
+        borderTopWidth: 1,
+        borderColor: '#f1f1f1',
     },
     itemContainer: {
         flexDirection: 'row',

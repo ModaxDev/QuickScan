@@ -8,6 +8,7 @@ import ProductScreen from "../template/ProductScreen";
 import ScanNavigator from "./ScanNavigator";
 import HistoryScreen from "../template/HistoryScreen";
 import SearchScreen from "../template/SearchScreen";
+import HistoryNavigator from "./HistoryNavigator";
 
 const {Navigator, Screen} = createBottomTabNavigator();
 
@@ -15,7 +16,7 @@ const TabNavigator = () => {
 
     return (
         <Navigator tabBar={(props) => <BottomTabBar {...props} />}>
-            <Screen name="HISTORY" component={HistoryScreen}/>
+            <Screen name="Historique" options={{headerShown: false}} component={HistoryNavigator}/>
             <Screen
                 options={{
                     headerShown: false,

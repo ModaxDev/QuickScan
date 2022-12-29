@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import {Icon, Layout, Menu, Text} from "@ui-kitten/components";
 import {SafeScreen} from "../component/Display/SafeScreen";
 import {View, StyleSheet, FlatList, TouchableOpacity, Image, ScrollView} from "react-native";
@@ -10,10 +10,11 @@ import ProductDetailAccessory from "../component/Product/ProductDetailAccessory"
 import ProductDetailVideo from "../component/Product/ProductDetailVideo";
 import YoutubePlayer from "react-native-youtube-iframe";
 import ProductDetailTag from "../component/Product/ProductDetailTag";
+import ProductRepository from "../repository/ProductRepository";
 
 const ProductScreen = ({route, navigation}: any) => {
     const {product} = route.params;
-    const [videosByCategoryState, setVideosByCategoryState] = React.useState<{ [key: string]: any[] }>();
+    const [videosByCategoryState, setVideosByCategoryState] = useState<{ [key: string]: any[] }>();
     useEffect(() => {
         if (product != null) {
             const videosByCategory: { [key: string]: any[] } = {}
@@ -30,6 +31,7 @@ const ProductScreen = ({route, navigation}: any) => {
 
     const categories = product.productVideos.map((item: any) => item.category)
         .filter((category: string, index: number, self: string[]) => self.indexOf(category) === index);
+
     return (
         <SafeScreen product={product}>
             <View style={styles.globalContainer}>
@@ -37,7 +39,7 @@ const ProductScreen = ({route, navigation}: any) => {
                 <ProductDetailTag product={product}/>
                 <ProductDetailDescription product={product}/>
                 <ProductDetailAccessory product={product}/>
-                {categories.map((category : any, index : any) => (
+                {categories && categories.map((category : any, index : any) => (
                     <ProductDetailVideo key={index} keyProp={index} categoryName={category} product={videosByCategoryState ? videosByCategoryState[category] : []}/>
                 ))}
             </View>

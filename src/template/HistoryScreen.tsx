@@ -18,9 +18,10 @@ import {IMAGE_URL} from "../utils/env";
 import {MaterialCommunityIcons} from "@expo/vector-icons";
 import moment from "moment/moment";
 import ProductHistoryItemList from "../component/Product/ProductHistoryItemList";
+import {BaseSafeScreen} from "../component/Display/BaseSafeScreen";
 
 
-const HistoryScreen = () => {
+const HistoryScreen = ({navigation}:any) => {
     const isFocused = useIsFocused();
     const [products, setProducts] = React.useState([]);
 
@@ -34,15 +35,17 @@ const HistoryScreen = () => {
     }, [isFocused])
 
     return (
-        <View style={{flex: 1}}>
-            <FlatList
-                style={styles.container}
-                contentContainerStyle={styles.contentContainer}
-                data={products}
-                ItemSeparatorComponent={ListItemSeparator}
-                renderItem={({item, index}) => <ProductHistoryItemList onDeleted={() => getProducts()} index={index} product={item}/>}
-            />
-        </View>
+
+        <BaseSafeScreen title={"Historique"}>
+            <View style={{flex:1}}>
+                <FlatList
+                    style={styles.container}
+                    contentContainerStyle={styles.contentContainer}
+                    data={products}
+                    renderItem={({item, index}) => <ProductHistoryItemList navigation={navigation} onDeleted={() => getProducts()} index={index} product={item}/>}
+                />
+            </View>
+        </BaseSafeScreen>
     )
 }
 
