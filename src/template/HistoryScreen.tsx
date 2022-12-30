@@ -45,7 +45,7 @@ const HistoryScreen = ({navigation}: any) => {
                     ListHeaderComponent={() => <View style={{paddingTop: insets.top}}><HeaderSimple title={"Historique"}/></View>}
                     style={styles.container}
                     contentContainerStyle={styles.contentContainer}
-                    data={products}
+                    data={products.sort((a:ProductStorageType , b:ProductStorageType) => moment(b.createdAt).diff(moment(a.createdAt)))}
                     renderItem={({item, index}) => <ProductHistoryItemList navigation={navigation}
                                                                            onDeleted={() => getProducts()} index={index}
                                                                            product={item}/>}
