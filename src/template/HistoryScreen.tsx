@@ -37,14 +37,16 @@ const HistoryScreen = ({navigation}:any) => {
     return (
 
         <BaseSafeScreen title={"Historique"}>
-            <View style={{flex:1}}>
-                <FlatList
-                    style={styles.container}
-                    contentContainerStyle={styles.contentContainer}
-                    data={products}
-                    renderItem={({item, index}) => <ProductHistoryItemList navigation={navigation} onDeleted={() => getProducts()} index={index} product={item}/>}
-                />
-            </View>
+                <View style={{ flex: 1,}}>
+                    <ScrollView horizontal={true} style={{ width: "100%" }}>
+                    <FlatList
+                        style={styles.container}
+                        contentContainerStyle={styles.contentContainer}
+                        data={products}
+                        renderItem={({item, index}) => <ProductHistoryItemList navigation={navigation} onDeleted={() => getProducts()} index={index} product={item}/>}
+                    />
+                    </ScrollView>
+                </View>
         </BaseSafeScreen>
     )
 }

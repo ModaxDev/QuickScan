@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add product history delete and list">
-      <change afterPath="$PROJECT_DIR$/src/component/Display/BaseSafeScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Display/HeaderSimple.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/navigation/HistoryNavigator.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/template/HistoryProductScreen.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add product history on click screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductHistoryItemList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductHistoryItemList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Display/BaseSafeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Display/BaseSafeScreen.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/ProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ProductScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +69,7 @@
       <workItem from="1672059978330" duration="20303000" />
       <workItem from="1672175353291" duration="1041000" />
       <workItem from="1672177953280" duration="11129000" />
-      <workItem from="1672272877427" duration="4567000" />
+      <workItem from="1672272877427" duration="5456000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -238,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672192763729</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: add product history on click screen">
+      <created>1672279827645</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1672279827645</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +268,7 @@
     <MESSAGE value="fix: fix the key from the product detail video" />
     <MESSAGE value="feat: add product detail tags" />
     <MESSAGE value="feat: add product history delete and list" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add product history delete and list" />
+    <MESSAGE value="feat: add product history on click screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add product history on click screen" />
   </component>
 </project>
