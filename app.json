@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ProductYukaMobile",
-    "slug": "ProductYukaMobile",
+    "name": "QuickScan",
+    "slug": "QuickScan",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,7 +27,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.png"
     }
   }
 }
