@@ -15,7 +15,7 @@ export const BaseSafeScreen = ({children, style, title = null}: Props) => {
     const insets = useSafeAreaInsets();
     return <SafeAreaProvider style={[styles.screen, style,{paddingTop: insets.top}]}>
         {title && <HeaderSimple title={title} />}
-        <ScrollView nestedScrollEnabled={true} style={{ width: "100%" }}>
+        <ScrollView>
             <KeyboardAvoidingView>
                 <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                     <View style={[styles.view, style]}>{children}</View>

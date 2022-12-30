@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add product history on click screen">
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: fix the virtualized error">
+      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductSearchItemList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Search/SearchBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/navigation/SearchNavigator.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Display/BaseSafeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Display/BaseSafeScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/TabNavigator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/ProductRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ProductRepository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/SearchScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/SearchScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +75,7 @@
       <workItem from="1672059978330" duration="20303000" />
       <workItem from="1672175353291" duration="1041000" />
       <workItem from="1672177953280" duration="11129000" />
-      <workItem from="1672272877427" duration="5456000" />
+      <workItem from="1672272877427" duration="9879000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -239,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672279827645</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fix: fix the virtualized error">
+      <created>1672363204529</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672363204529</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +282,7 @@
     <MESSAGE value="feat: add product detail tags" />
     <MESSAGE value="feat: add product history delete and list" />
     <MESSAGE value="feat: add product history on click screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add product history on click screen" />
+    <MESSAGE value="fix: fix the virtualized error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix the virtualized error" />
   </component>
 </project>

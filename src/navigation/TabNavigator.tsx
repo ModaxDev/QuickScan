@@ -9,6 +9,7 @@ import ScanNavigator from "./ScanNavigator";
 import HistoryScreen from "../template/HistoryScreen";
 import SearchScreen from "../template/SearchScreen";
 import HistoryNavigator from "./HistoryNavigator";
+import SearchNavigator from "./SearchNavigator";
 
 const {Navigator, Screen} = createBottomTabNavigator();
 
@@ -24,7 +25,9 @@ const TabNavigator = () => {
                 name="ScanTab"
                 component={ScanNavigator}
             />
-            <Screen name="Search" component={SearchScreen}/>
+            <Screen name="SearchNav" options={{
+                headerShown: false,
+            }} component={SearchNavigator}/>
         </Navigator>
     )
 };
