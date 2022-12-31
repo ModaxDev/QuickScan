@@ -1,16 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {Icon, Layout, Menu, Text} from "@ui-kitten/components";
 import {SafeScreen} from "../component/Display/SafeScreen";
-import {View, StyleSheet, FlatList, TouchableOpacity, Image, ScrollView} from "react-native";
-import ProductDetailHeader from "../component/Product/ProductDetailHeader";
-import ProductDetailHeaderInformation from "../component/Product/ProductDetailHeaderInformation";
-import ProductDetailDescription from "../component/Product/ProductDetailDescription";
-import {IMAGE_URL} from "../utils/env";
-import ProductDetailAccessory from "../component/Product/ProductDetailAccessory";
-import ProductDetailVideo from "../component/Product/ProductDetailVideo";
-import YoutubePlayer from "react-native-youtube-iframe";
-import ProductDetailTag from "../component/Product/ProductDetailTag";
-import ProductRepository from "../repository/ProductRepository";
+import ProductDetail from "../component/Product/ProductDetail";
 
 const ProductScreen = ({route, navigation}: any) => {
     const {product} = route.params;
@@ -34,30 +24,10 @@ const ProductScreen = ({route, navigation}: any) => {
 
     return (
         <SafeScreen product={product}>
-            <View style={styles.globalContainer}>
-                <ProductDetailHeaderInformation product={product}/>
-                <ProductDetailTag product={product}/>
-                <ProductDetailDescription product={product}/>
-                <ProductDetailAccessory product={product}/>
-                {categories && categories.map((category : any, index : any) => (
-                    <ProductDetailVideo key={index} keyProp={index} categoryName={category} product={videosByCategoryState ? videosByCategoryState[category] : []}/>
-                ))}
-            </View>
+            <ProductDetail product={product} categories={categories} videosByCategoryState={videosByCategoryState}/>
         </SafeScreen>
     )
 }
 
 
 export default ProductScreen
-
-const styles = StyleSheet.create({
-        globalContainer: {
-            flex: 1,
-            marginBottom: 50,
-        },
-        container: {
-            marginLeft: 20,
-            textAlign: "center",
-        },
-    })
-;

@@ -1,13 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {SafeScreen} from "../component/Display/SafeScreen";
 import {StyleSheet, View} from "react-native";
-import ProductDetailHeaderInformation from "../component/Product/ProductDetailHeaderInformation";
-import ProductDetailTag from "../component/Product/ProductDetailTag";
-import ProductDetailDescription from "../component/Product/ProductDetailDescription";
-import ProductDetailAccessory from "../component/Product/ProductDetailAccessory";
-import ProductDetailVideo from "../component/Product/ProductDetailVideo";
 import ProductRepository from "../repository/ProductRepository";
 import {Layout, Spinner} from "@ui-kitten/components";
+import ProductDetail from "../component/Product/ProductDetail";
 
 const HistoryProductScreen = ({route, navigation}: any) => {
     const {product} = route.params;
@@ -49,16 +45,7 @@ const HistoryProductScreen = ({route, navigation}: any) => {
 
     return (
         <SafeScreen product={productState}>
-            <View style={styles.globalContainer}>
-                <ProductDetailHeaderInformation product={productState}/>
-                <ProductDetailTag product={productState}/>
-                <ProductDetailDescription product={productState}/>
-                <ProductDetailAccessory product={productState}/>
-                {categories && categories.map((category: any, index: any) => (
-                    <ProductDetailVideo key={index} keyProp={index} categoryName={category}
-                                        product={videosByCategoryState ? videosByCategoryState[category] : []}/>
-                ))}
-            </View>
+            <ProductDetail product={productState} categories={categories} videosByCategoryState={videosByCategoryState}/>
         </SafeScreen>
     )
 }
@@ -66,14 +53,6 @@ const HistoryProductScreen = ({route, navigation}: any) => {
 export default HistoryProductScreen
 
 const styles = StyleSheet.create({
-        globalContainer: {
-            flex: 1,
-            marginBottom: 50,
-        },
-        container: {
-            marginLeft: 20,
-            textAlign: "center",
-        },
         spinnerContainer: {
             position: 'absolute',
             top: '50%',

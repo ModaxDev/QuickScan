@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add icons, splash and adaptative icon">
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: auto scan between scanned articles">
+      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductDetail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/HistoryProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/HistoryProductScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/ProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ProductScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/clementverhille/Documents/project/ProductYukaMobile/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/clementverhille/Documents/project/ProductYukaMobile/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/clementverhille/Documents/project/ProductYukaMobile/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/clementverhille/Documents/project/ProductYukaMobile/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
@@ -73,7 +75,8 @@
       <workItem from="1672059978330" duration="20303000" />
       <workItem from="1672175353291" duration="1041000" />
       <workItem from="1672177953280" duration="11129000" />
-      <workItem from="1672272877427" duration="14146000" />
+      <workItem from="1672272877427" duration="14879000" />
+      <workItem from="1672499463804" duration="510000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -271,14 +274,20 @@
       <option name="project" value="LOCAL" />
       <updated>1672424153754</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="fix: auto scan between scanned articles">
+      <created>1672497581699</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1672497581699</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add square on the view bar code" />
     <MESSAGE value="feat: add bottom and tab to project" />
     <MESSAGE value="feat: custom theme" />
     <MESSAGE value="feat: add torch on/off + haptics return on click on button" />
@@ -303,6 +312,7 @@
     <MESSAGE value="fix: fix the virtualized error and add the serach bar and the feature to search a product inside the bdd" />
     <MESSAGE value="feat: add a sort to the history" />
     <MESSAGE value="feat: add icons, splash and adaptative icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add icons, splash and adaptative icon" />
+    <MESSAGE value="fix: auto scan between scanned articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: auto scan between scanned articles" />
   </component>
 </project>
