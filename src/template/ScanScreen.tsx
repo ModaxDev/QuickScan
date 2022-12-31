@@ -12,6 +12,7 @@ import ProductStorage from "../utils/Storage/ProductStorage";
 const ScanScreen = ({navigation}: any) => {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
+    const [canScan, setCanScan] = useState(false);
     const [flashOn, setFlashOn] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -24,7 +25,16 @@ const ScanScreen = ({navigation}: any) => {
         getCameraPermission();
     }, []);
 
+    useEffect(() => {
+        if(canScan){
+            setTimeout(() => {
+                setScanned(false);
+            }, 500);
+        }
+    }, [canScan]);
+
     const handleBarCodeScanned = async ({type, data}: any) => {
+        setCanScan(false);
         setIsLoading(true);
         setScanned(true);
         try {
@@ -48,6 +58,7 @@ const ScanScreen = ({navigation}: any) => {
             Alert.alert('Error', 'Une erreur est survenue lors de la récupération du produit ou celui-ci n\'existe pas');
         } finally {
             setIsLoading(false);
+            setCanScan(true);
         }
     };
 
@@ -70,11 +81,6 @@ const ScanScreen = ({navigation}: any) => {
             </View>
             <View style={styles.scannerContainer}>
             </View>
-            {scanned && (
-                <View style={styles.margin}>
-                    <Button onPress={() => setScanned(false)}>Tap to Scan Again</Button>
-                </View>
-            )}
             <View style={styles.buttonContainer}>
                 <TouchableOpacity onPress={() => {
                     setFlashOn(!flashOn)

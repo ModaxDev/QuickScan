@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add a sort to the history">
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add icons, splash and adaptative icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/adaptive-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/adaptive-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/splash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <workItem from="1672059978330" duration="20303000" />
       <workItem from="1672175353291" duration="1041000" />
       <workItem from="1672177953280" duration="11129000" />
-      <workItem from="1672272877427" duration="11709000" />
+      <workItem from="1672272877427" duration="14146000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -267,14 +264,20 @@
       <option name="project" value="LOCAL" />
       <updated>1672401843611</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat: add icons, splash and adaptative icon">
+      <created>1672424153754</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1672424153754</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add bar code scanner to test" />
     <MESSAGE value="feat: add square on the view bar code" />
     <MESSAGE value="feat: add bottom and tab to project" />
     <MESSAGE value="feat: custom theme" />
@@ -299,6 +302,7 @@
     <MESSAGE value="fix: fix the virtualized error" />
     <MESSAGE value="fix: fix the virtualized error and add the serach bar and the feature to search a product inside the bdd" />
     <MESSAGE value="feat: add a sort to the history" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add a sort to the history" />
+    <MESSAGE value="feat: add icons, splash and adaptative icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add icons, splash and adaptative icon" />
   </component>
 </project>
