@@ -17,14 +17,20 @@ const ProductDetailHeaderInformation = ({product}:any) => {
                         <Text style={{fontWeight: "bold"}}>{product.company}</Text>
                     </Layout>
                 </Layout>
-                <Layout style={{flexDirection: "row", alignItems: "center"}}>
-                    <Icon style={styles.icon} fill={"#34d92e"} name="checkmark-outline"/>
-                    <Text category="s1">Réparable</Text>
-                </Layout>
-                <Layout style={{flexDirection: "row", alignItems: "center"}}>
+                {product.isFixable ? (
+                    <Layout style={{flexDirection: "row", alignItems: "center"}}>
+                        <Icon style={styles.icon} fill={"#34d92e"} name="checkmark-outline"/>
+                        <Text category="s1">Réparable</Text>
+                    </Layout>) : (
+                    <Layout style={{flexDirection: "row", alignItems: "center"}}>
+                        <Icon style={styles.icon} fill={"#de2a2a"} name="close-outline"/>
+                        <Text category="s1">Pas réparable</Text>
+                    </Layout>
+                )}
+                {product.isFixable && (<Layout style={{flexDirection: "row", alignItems: "center"}}>
                     <Text category="s1">Indice de réparabilité</Text>
                     <Text style={{fontWeight: "bold", color: product.reparabilityIndex && product.reparabilityIndex > 5 ? "#34d92e" : product.reparabilityIndex == 5 ? "#777777" : "#de2a2a" }}> {product.reparabilityIndex} / 10</Text>
-                </Layout>
+                </Layout>)}
             </Layout>
         </Layout>
     )

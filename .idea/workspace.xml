@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: auto scan between scanned articles">
-      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductDetail.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: removes console log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/HistoryProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/HistoryProductScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/ProductScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ProductScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductDetailHeaderInformation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailHeaderInformation.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <workItem from="1672175353291" duration="1041000" />
       <workItem from="1672177953280" duration="11129000" />
       <workItem from="1672272877427" duration="14879000" />
-      <workItem from="1672499463804" duration="510000" />
+      <workItem from="1672499463804" duration="1472000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -281,15 +279,27 @@
       <option name="project" value="LOCAL" />
       <updated>1672497581699</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="feat: add product detail component">
+      <created>1672500021639</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1672500021639</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fix: removes console log">
+      <created>1672500053622</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1672500053622</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add bottom and tab to project" />
-    <MESSAGE value="feat: custom theme" />
     <MESSAGE value="feat: add torch on/off + haptics return on click on button" />
     <MESSAGE value="feat: add a link to product page when scan, and navigator to scan" />
     <MESSAGE value="feat: connect app to api and after scan sucessfull, go to the product page" />
@@ -313,6 +323,8 @@
     <MESSAGE value="feat: add a sort to the history" />
     <MESSAGE value="feat: add icons, splash and adaptative icon" />
     <MESSAGE value="fix: auto scan between scanned articles" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: auto scan between scanned articles" />
+    <MESSAGE value="feat: add product detail component" />
+    <MESSAGE value="fix: removes console log" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: removes console log" />
   </component>
 </project>
