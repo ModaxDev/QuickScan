@@ -11,7 +11,6 @@ const HistoryProductScreen = ({route, navigation}: any) => {
     useEffect(() => {
         if (product) {
             ProductRepository.findOneByCode(product.barCodeNumber).then((res: any) => {
-                console.log(res.data);
                 setProductState(res.data);
             })
         }
