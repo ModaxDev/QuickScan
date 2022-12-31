@@ -5,6 +5,7 @@ import ProductDetailAccessory from "./ProductDetailAccessory";
 import ProductDetailVideo from "./ProductDetailVideo";
 import {StyleSheet, View} from "react-native";
 import React from "react";
+import ProductRepair from "./ProductRepair";
 
 type ProductDetailProps = {
     product: any;
@@ -21,6 +22,7 @@ const ProductDetail = (props: ProductDetailProps) => {
             <ProductDetailTag product={props.product}/>
             <ProductDetailDescription product={props.product}/>
             <ProductDetailAccessory product={props.product}/>
+            <ProductRepair product={props.product} />
             {props.categories && props.categories.map((category: any, index: any) => (
                 <ProductDetailVideo key={index} keyProp={index} categoryName={category}
                                     product={props.videosByCategoryState ? props.videosByCategoryState[category] : []}/>
