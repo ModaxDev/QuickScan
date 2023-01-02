@@ -46,7 +46,6 @@ const deleteProductByBarCodeNumber = async (product : ProductStorageType) => {
         let products = existingProducts ? JSON.parse(existingProducts) : [];
         products = products.filter((p : any) => p.barCodeNumber !== product.barCodeNumber);
         product.isFavorite = false;
-        console.log("delete",product);
         products.push(product);
         await AsyncStorage.setItem('products', JSON.stringify(products));
     } catch (e) {
@@ -76,7 +75,6 @@ const changeProductFavorite = async (product : ProductStorageType) => {
         product.isFavorite = false
         products.push(product);
         await AsyncStorage.setItem('products', JSON.stringify(products));
-        console.log("change",products);
     } catch (e) {
         Alert.alert('Erreur', 'Une erreur lors de la modification du produit en favoris');
     }

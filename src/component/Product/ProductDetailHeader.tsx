@@ -51,11 +51,8 @@ const ProductDetailHeader = ({ product }: any) => {
     }
 
     ProductStorage.isProductFavorite(ProductStorageItem).then((data) => {
-        console.log(data);
         setIsFavorite(data);
-    })
-
-    console.log(isFavorite);
+    });
 
     return (
         <Layout style={styles.header}>
