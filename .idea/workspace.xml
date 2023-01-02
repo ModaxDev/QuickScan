@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add product custom">
-      <change afterPath="$PROJECT_DIR$/src/component/Product/ProductRepair.tsx" afterDir="false" />
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add repair component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductDetail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +74,8 @@
       <workItem from="1672175353291" duration="1041000" />
       <workItem from="1672177953280" duration="11129000" />
       <workItem from="1672272877427" duration="14879000" />
-      <workItem from="1672499463804" duration="3548000" />
+      <workItem from="1672499463804" duration="3653000" />
+      <workItem from="1672676379461" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -303,14 +301,20 @@
       <option name="project" value="LOCAL" />
       <updated>1672501206441</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="feat: add repair component">
+      <created>1672503338806</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1672503338806</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add a link to product page when scan, and navigator to scan" />
     <MESSAGE value="feat: connect app to api and after scan sucessfull, go to the product page" />
     <MESSAGE value="feat: add error message if no product found" />
     <MESSAGE value="feat: add icons" />
@@ -335,6 +339,7 @@
     <MESSAGE value="feat: add product detail component" />
     <MESSAGE value="fix: removes console log" />
     <MESSAGE value="feat: add product custom" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add product custom" />
+    <MESSAGE value="feat: add repair component" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add repair component" />
   </component>
 </project>

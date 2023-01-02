@@ -4,7 +4,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 const storeProduct = async (product: ProductStorageType) => {
     try {
         const existingProducts = await AsyncStorage.getItem('products');
-        const products = existingProducts ? JSON.parse(existingProducts) : [];
+        let products = existingProducts ? JSON.parse(existingProducts) : [];
+        products = products.filter((p : any) => p.barCodeNumber !== product.barCodeNumber);
         products.push(product);
         await AsyncStorage.setItem('products', JSON.stringify(products));
     } catch (e) {
