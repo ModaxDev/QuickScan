@@ -21,6 +21,7 @@ const ProductSearchItemList = (props: Props) => {
                 company: props.product.company,
                 barCodeNumber: props.product.barCodeNumber,
                 fileUrl: props.product.fileUrl,
+                isFavorite: false,
             }
             await ProductStorage.storeProduct(ProductStorageItem);
         } catch (e) {

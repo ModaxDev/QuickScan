@@ -6,4 +6,6 @@ type ProductStorageType = {
     company: string;
 
     createdAt: Date;
+
+    isFavorite: boolean;
 }

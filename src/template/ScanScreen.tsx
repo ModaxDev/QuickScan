@@ -47,15 +47,17 @@ const ScanScreen = ({navigation}: any) => {
                     company: response.data.company,
                     barCodeNumber: response.data.barCodeNumber,
                     fileUrl: response.data.fileUrl,
+                    isFavorite: false,
                 }
                 await ProductStorage.storeProduct(ProductStorageItem);
             } catch (e) {
                 console.log(e);
+                Alert.alert("Erreur", "Erreur lors de l'enregistrement du produit dans l'historique");
             }
             setFlashOn(false);
             navigation.navigate('Product', {product: response.data});
         } catch (error) {
-            Alert.alert('Error', 'Une erreur est survenue lors de la récupération du produit ou celui-ci n\'existe pas');
+            Alert.alert('Error', 'Impossible de trouver le produit');
         } finally {
             setIsLoading(false);
             setCanScan(true);

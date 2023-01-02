@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add repair component">
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: remove existing product inside storage if the same item is scan">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductSearchItemList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductSearchItemList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/ProductStorageType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/ProductStorageType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +77,7 @@
       <workItem from="1672177953280" duration="11129000" />
       <workItem from="1672272877427" duration="14879000" />
       <workItem from="1672499463804" duration="3653000" />
-      <workItem from="1672676379461" duration="311000" />
+      <workItem from="1672676379461" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -308,14 +310,20 @@
       <option name="project" value="LOCAL" />
       <updated>1672503338806</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="feat: remove existing product inside storage if the same item is scan">
+      <created>1672676741708</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1672676741708</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: connect app to api and after scan sucessfull, go to the product page" />
     <MESSAGE value="feat: add error message if no product found" />
     <MESSAGE value="feat: add icons" />
     <MESSAGE value="feat: header" />
@@ -340,6 +348,7 @@
     <MESSAGE value="fix: removes console log" />
     <MESSAGE value="feat: add product custom" />
     <MESSAGE value="feat: add repair component" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add repair component" />
+    <MESSAGE value="feat: remove existing product inside storage if the same item is scan" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: remove existing product inside storage if the same item is scan" />
   </component>
 </project>
