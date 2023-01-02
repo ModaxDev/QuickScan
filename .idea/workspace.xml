@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: remove existing product inside storage if the same item is scan">
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: message error and add fav bool to storage product">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductSearchItemList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductSearchItemList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/ProductStorageType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/ProductStorageType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductDetailHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductHistoryItemList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductHistoryItemList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <workItem from="1672177953280" duration="11129000" />
       <workItem from="1672272877427" duration="14879000" />
       <workItem from="1672499463804" duration="3653000" />
-      <workItem from="1672676379461" duration="534000" />
+      <workItem from="1672676379461" duration="4391000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -317,14 +318,20 @@
       <option name="project" value="LOCAL" />
       <updated>1672676741708</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="fix: message error and add fav bool to storage product">
+      <created>1672676948447</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1672676948448</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add error message if no product found" />
     <MESSAGE value="feat: add icons" />
     <MESSAGE value="feat: header" />
     <MESSAGE value="feat: add product detail header" />
@@ -349,6 +356,7 @@
     <MESSAGE value="feat: add product custom" />
     <MESSAGE value="feat: add repair component" />
     <MESSAGE value="feat: remove existing product inside storage if the same item is scan" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: remove existing product inside storage if the same item is scan" />
+    <MESSAGE value="fix: message error and add fav bool to storage product" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: message error and add fav bool to storage product" />
   </component>
 </project>

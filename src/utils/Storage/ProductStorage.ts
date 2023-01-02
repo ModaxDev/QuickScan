@@ -40,9 +40,54 @@ const deleteProduct = async (index: number) => {
     }
 }
 
+const deleteProductByBarCodeNumber = async (product : ProductStorageType) => {
+    try {
+        const existingProducts = await AsyncStorage.getItem('products');
+        let products = existingProducts ? JSON.parse(existingProducts) : [];
+        products = products.filter((p : any) => p.barCodeNumber !== product.barCodeNumber);
+        product.isFavorite = false;
+        console.log("delete",product);
+        products.push(product);
+        await AsyncStorage.setItem('products', JSON.stringify(products));
+    } catch (e) {
+        Alert.alert('Erreur', 'Une erreur lors de la suppression du produit');
+    }
+}
+
+const isProductFavorite = async (product : ProductStorageType) => {
+    try {
+        const existingProducts = await AsyncStorage.getItem('products');
+        let products = existingProducts ? JSON.parse(existingProducts) : [];
+        products = products.filter((p : any) => p.barCodeNumber === product.barCodeNumber);
+        if(products.length > 0) {
+            return products[0].isFavorite;
+        }
+        return false;
+    } catch (e) {
+        Alert.alert('Erreur', 'Une erreur lors de la récupération du produit en favoris');
+    }
+}
+
+const changeProductFavorite = async (product : ProductStorageType) => {
+    try {
+        const existingProducts = await AsyncStorage.getItem('products');
+        let products = existingProducts ? JSON.parse(existingProducts) : [];
+        products = products.filter((p : any) => p.barCodeNumber !== product.barCodeNumber);
+        product.isFavorite = false
+        products.push(product);
+        await AsyncStorage.setItem('products', JSON.stringify(products));
+        console.log("change",products);
+    } catch (e) {
+        Alert.alert('Erreur', 'Une erreur lors de la modification du produit en favoris');
+    }
+}
+
+
 export default {
     storeProduct,
     getProducts,
     deleteAllProducts,
-    deleteProduct
+    deleteProduct,
+    deleteProductByBarCodeNumber,isProductFavorite,
+    changeProductFavorite
 }

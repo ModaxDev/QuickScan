@@ -27,7 +27,6 @@ const ProductHistoryItemList = (props : Props) => {
             Alert.alert('Error', 'Une erreur est survenue lors de la suppression du produit');
         }
     }
-
     return (
         <Swipeable renderRightActions={() => <ListItemDeleteAction onPress={() => handleDelete(props.index)}/>}>
             <TouchableHighlight
