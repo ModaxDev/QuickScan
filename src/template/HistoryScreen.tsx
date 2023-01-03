@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     },
     tabBar: {
         marginVertical: 20,
-        backgroundColor: '#F25C05',
+        backgroundColor: '#2a51a3',
         borderRadius: 5,
         marginHorizontal: 20
     },
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
         color: '#fff'
     },
     menuInActive: {
-        color: '#fba35a'
+        color: '#9ccdf4'
     },
     coursesTitle: {
         margin: 10,
