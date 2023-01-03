@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: message error and add fav bool to storage product">
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: remove some console log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductDetailHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductHistoryItemList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductHistoryItemList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/HistoryScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Storage/ProductStorage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
       <workItem from="1672177953280" duration="11129000" />
       <workItem from="1672272877427" duration="14879000" />
       <workItem from="1672499463804" duration="3653000" />
-      <workItem from="1672676379461" duration="4391000" />
+      <workItem from="1672676379461" duration="5913000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
@@ -325,15 +321,27 @@
       <option name="project" value="LOCAL" />
       <updated>1672676948448</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="feat: add like button and the system to add to fav">
+      <created>1672681065594</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1672681065594</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix: remove some console log">
+      <created>1672681111142</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1672681111142</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add icons" />
-    <MESSAGE value="feat: header" />
     <MESSAGE value="feat: add product detail header" />
     <MESSAGE value="feat: add product detail header information component" />
     <MESSAGE value="feat: add product detail description component" />
@@ -357,6 +365,8 @@
     <MESSAGE value="feat: add repair component" />
     <MESSAGE value="feat: remove existing product inside storage if the same item is scan" />
     <MESSAGE value="fix: message error and add fav bool to storage product" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: message error and add fav bool to storage product" />
+    <MESSAGE value="feat: add like button and the system to add to fav" />
+    <MESSAGE value="fix: remove some console log" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: remove some console log" />
   </component>
 </project>

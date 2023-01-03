@@ -14,9 +14,9 @@ const SearchScreen = ({navigation}: any) => {
     const [products, setProducts] = useState<any[]>([]);
 
     useEffect(() => {
-            ProductRepository.findByName(search).then((res: any) => {
-                setProducts(res.data["hydra:member"]);
-            })
+        ProductRepository.findByName(search).then((res: any) => {
+            setProducts(res.data["hydra:member"]);
+        })
     }, [search])
     const insets = useSafeAreaInsets();
 
