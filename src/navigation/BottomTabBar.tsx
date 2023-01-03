@@ -5,6 +5,7 @@ import {
     BottomNavigationTab,
     Icon,
     Text,
+    useTheme,
 } from "@ui-kitten/components";
 import { ParamListBase, TabNavigationState } from "@react-navigation/native";
 import { StyleSheet } from "react-native";
@@ -22,25 +23,28 @@ interface Props {
     state: TabNavigationState<ParamListBase>;
 }
 
-const BottomTabBar = ({ navigation, state }: any) => (
-    <BottomNavigation
-        style={{
-            height: 50,
-            marginBottom: 20,
-        }}
-        selectedIndex={state.index}
-        onSelect={(index) => {
-            navigation.navigate(state.routeNames[index]);
-        }}
-    >
-        <BottomNavigationTab icon={HistoryIcon} title="Historique" />
-        <BottomNavigationTab
-            icon={HomeIcon}
-            title={(evaProps) => <Text {...evaProps}>Scanner</Text>}
-        />
-        <BottomNavigationTab icon={SearchIcon} title="Rechercher" />
-    </BottomNavigation>
-);
+const BottomTabBar = ({ navigation, state }: any) => {
+    const theme = useTheme();
+    return (
+        <BottomNavigation
+            style={{
+                height: 50,
+                marginBottom: 20,
+            }}
+            selectedIndex={state.index}
+            onSelect={(index) => {
+                navigation.navigate(state.routeNames[index]);
+            }}
+        >
+            <BottomNavigationTab icon={HistoryIcon} title="Historique" />
+            <BottomNavigationTab
+                icon={HomeIcon}
+                title={(evaProps) => <Text {...evaProps}>Scanner</Text>}
+            />
+            <BottomNavigationTab icon={SearchIcon} title="Rechercher" />
+        </BottomNavigation>
+    )
+};
 
 export default BottomTabBar;
 
