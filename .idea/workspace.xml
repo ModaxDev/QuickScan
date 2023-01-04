@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="feat: add new icons">
+
+    <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: message error and add fav bool to storage product">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Product/ProductDetailVideo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Product/ProductDetailVideo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +88,7 @@
       <workItem from="1672272877427" duration="14879000" />
       <workItem from="1672499463804" duration="3653000" />
       <workItem from="1672676379461" duration="5913000" />
-      <workItem from="1672824966770" duration="99000" />
-      <workItem from="1672825259706" duration="1344000" />
+      <workItem from="1672824966770" duration="1110000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add ui kitten, axios, and react query">
       <created>1671554551637</created>
