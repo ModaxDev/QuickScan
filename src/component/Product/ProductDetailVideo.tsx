@@ -7,6 +7,19 @@ import playing = Simulate.playing;
 import YoutubePlayer from "react-native-youtube-iframe";
 
 
+const getVideoId = (url: string) => {
+    const videoId = url.split('v=')[1];
+    const ampersandPosition = videoId.indexOf('&');
+    if (ampersandPosition !== -1) {
+        return videoId.substring(0, ampersandPosition);
+    }
+    return videoId;
+}
+
+const capitalize = (s: string) => {
+    return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
 const ProductDetailVideo = ({product, categoryName, keyProp}:any) => {
     const [playing, setPlaying] = useState(false);
 
@@ -16,9 +29,11 @@ const ProductDetailVideo = ({product, categoryName, keyProp}:any) => {
         }
     }, []);
 
+    console.log("product", product);
+
     return (
         <ScrollView key={keyProp} style={styles.container}>
-            <Layout style={styles.text}><Text category={"h6"}>Vidéos - {categoryName}</Text></Layout>
+            <Layout style={styles.text}><Text category={"h6"}>Vidéos - {capitalize(categoryName) || 'Sans catégorie'}</Text></Layout>
             <FlatList
                 showsHorizontalScrollIndicator={false}
                 horizontal
@@ -29,12 +44,12 @@ const ProductDetailVideo = ({product, categoryName, keyProp}:any) => {
                         style={styles.video}
                     >
                         <View>
-                            {product.link && (
+                            {item.link && (
                                 <YoutubePlayer
                                     height={180}
                                     width={250}
                                     play={playing}
-                                    videoId={"TO7nwPgu9rs"}
+                                    videoId={getVideoId(item.link)}
                                     onChangeState={onStateChange}
                                 />
                             )}
