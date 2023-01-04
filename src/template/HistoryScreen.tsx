@@ -40,7 +40,7 @@ const HistoryScreen = ({navigation}: any) => {
 
     const productsFiltered = products.filter((product: ProductStorageType) => {
         if (selectedIndex === 0) {
-            return !product.isFavorite
+            return product;
         }
         if (selectedIndex === 1) {
             return product.isFavorite;
