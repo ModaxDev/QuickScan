@@ -29,13 +29,15 @@ const ProductDetailVideo = ({product, categoryName, keyProp}:any) => {
                         style={styles.video}
                     >
                         <View>
-                            <YoutubePlayer
-                                height={180}
-                                width={250}
-                                play={playing}
-                                videoId={"QBO0mrfbigE"}
-                                onChangeState={onStateChange}
-                            />
+                            {product.link && (
+                                <YoutubePlayer
+                                    height={180}
+                                    width={250}
+                                    play={playing}
+                                    videoId={"TO7nwPgu9rs"}
+                                    onChangeState={onStateChange}
+                                />
+                            )}
                         </View>
                     </TouchableOpacity>
                 )}
