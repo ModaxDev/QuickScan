@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="239f8d62-9af0-431f-950d-2681e21b081c" name="Changes" comment="fix: message error and add fav bool to storage product">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/ScanScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/ScanScreen.tsx" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +23,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="clem" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JBZXwqNGbKWEFkUC3Qkw4mqMTL" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -49,6 +58,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
@@ -344,7 +356,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add product detail header" />
     <MESSAGE value="feat: add product detail header information component" />
     <MESSAGE value="feat: add product detail description component" />
     <MESSAGE value="feat: updates components" />
@@ -369,6 +380,7 @@
     <MESSAGE value="fix: message error and add fav bool to storage product" />
     <MESSAGE value="feat: add like button and the system to add to fav" />
     <MESSAGE value="fix: remove some console log" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: remove some console log" />
+    <MESSAGE value="feat: add new icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add new icons" />
   </component>
 </project>
