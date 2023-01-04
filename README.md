@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="https://github.com/ModaxDev/QuickScan/blob/df656a98ca8cd3c39fc517e1c149663debcc5722/images/logo.png" alt="Markdownify" width="200">
+  <img src="https://i.imgur.com/IrG6L1e.png" alt="QuickScan" width="200">
   <br>
   QuickScan
   <br>
