@@ -3,7 +3,7 @@ import {Camera, FlashMode} from 'expo-camera';
 import * as Haptics from 'expo-haptics';
 
 import {View, StyleSheet, TouchableOpacity, Text, Alert} from 'react-native';
-import {Button, Icon, Spinner} from "@ui-kitten/components"
+import {Button, Icon, Modal, Spinner} from "@ui-kitten/components"
 import useApi from "../hooks/useApi";
 import ProductRepository from "../repository/ProductRepository";
 import ProductStorage from "../utils/Storage/ProductStorage";
@@ -15,6 +15,7 @@ const ScanScreen = ({navigation}: any) => {
     const [canScan, setCanScan] = useState(false);
     const [flashOn, setFlashOn] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [modalVisible, setModalVisible] = useState(false);
 
     useEffect(() => {
         const getCameraPermission = async () => {
@@ -56,11 +57,12 @@ const ScanScreen = ({navigation}: any) => {
             }
             setFlashOn(false);
             navigation.navigate('Product', {product: response.data});
+            setCanScan(true);
         } catch (error) {
-            Alert.alert('Error', 'Impossible de trouver le produit');
+            // Alert.alert('Error', 'Impossible de trouver le produit');
+            setModalVisible(true);
         } finally {
             setIsLoading(false);
-            setCanScan(true);
         }
     };
 
@@ -100,6 +102,18 @@ const ScanScreen = ({navigation}: any) => {
                     />
                 </TouchableOpacity>
             </View>
+            {/* Product not found modal */}
+            <Modal visible={modalVisible}>
+                <View style={styles.modalContainer}>
+                    <Text style={styles.modalTitle}>Produit non trouvé</Text>
+                    <Text style={styles.modalText}>Le produit n'a pas été trouvé dans notre base de données</Text>
+                    <Button style={styles.modalButton} onPress={() => {
+                        setModalVisible(false);
+                        setCanScan(true);
+                    }
+                    }>Réessayer</Button>
+                </View>
+            </Modal>
         </View>
     );
 };
@@ -126,9 +140,9 @@ const styles = StyleSheet.create({
         position: 'absolute',
         top: '50%',
         left: '50%',
-        transform: [{translateX: -150}, {translateY: -150}],
-        width: 300,
-        height: 300,
+        transform: [{translateX: -(350/2)}, {translateY: -(200/2)}],
+        width: 350,
+        height: 200,
         borderColor: '#FFFFFF',
         borderWidth: 2,
         borderRadius: 10,
@@ -150,8 +164,28 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: '#000000',
     },
-});
+    modalContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        padding: 20,
 
+    },
+    modalTitle: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 20,
+    },
+    modalText: {
+        fontSize: 16,
+        marginBottom: 20,
+        textAlign: 'center',
+    },
+    modalButton: {
+        width: 200,
+    },
+});
 
 export default ScanScreen;
 
