@@ -12,8 +12,6 @@
 [![Build With Badge](https://img.shields.io/badge/Build%20with-React%20Native-blue)](https://reactnative.dev/)
 [![Minimun Node version](https://img.shields.io/node/v/react-native)](https://reactnative.dev/)
 
-![demo](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
-
 ## 👨‍🏫 Presentation & Features
 
 QuickScan is a mobile application that allows you to scan the barcode of a product and get some informations about it. It is a Yuka alternative for non food products made with React Native by a team of 3 students _(
