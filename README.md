@@ -84,10 +84,5 @@ If the QR code doesn't work, you can try to open the application on an emulator.
 ###  TV QLED Samsung QE85Q60B  :
 ![TV QLED Samsung QE85Q60B ](images/tv-barcode.png)
 
-## Others links
-- [Figma Mockup](https://www.figma.com/file/QQvRIQfRBqP0V3aSHt9CCD/QuickScan---Maquette?node-id=0%3A1&t=7kJKHEaUxhyxeXgi-1)
-- [Demo video](https://www.youtube.com/watch?v=v2UKM-sFp6E)
-- [Kick-off & Retroplanning](https://ash-raincoat-a91.notion.site/S-minaire-React-Native-QuickScan-f15278e1030e48998b4d86f0f41b5cb4)
-
 
 
